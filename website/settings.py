@@ -29,7 +29,7 @@ SECRET_KEY = 'bag847nzr-^=ld)bw79usd7$c#=qse+x#m*bh!h!2pv^xjms9y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['glutenfreefoods.herokuapp.com','127.0.0.1']
 
 
 # Application definition
