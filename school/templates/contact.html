@@ -1,0 +1,90 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}St Fancis - Contact {% endblock %}
+{% block content %}
+
+
+    <div class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'school/images/bg_10.jpg' %}'); background-attachment:fixed;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 ftco-animate text-center">
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
+            <h1 class="mb-3 bread">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-section contact-section ftco-degree-bg">
+      <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Contact Information</h2>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-3">
+            <p><span>Address:</span> St Francis,Nchiru,Meru Kenya </p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Phone:</span> <a href="#">+254 700 000 000</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Email:</span> <a href="#">website@roydevelopers.com</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Website</span> <a href="#">roydevelopers.com</a></p>
+          </div>
+        </div>
+        <div class="row block-9">
+          <div class="col-md-6 pr-md-5">
+          	<h4 class="mb-4">Do you have any questions?</h4>
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <div class="col-md-6"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Na-315lIL_tfhVXZ5DB6BPhGND7-7NgR" width="640" height="480"></iframe></div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section-parallax">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+              <h2>Subcribe to our Newsletter</h2>
+              <p>“I don’t use agro vets or medicines, either, and instead I use hydrogen peroxide to treat water. When you mix 1.2 millilitre of hydrogen peroxide in 20 litres of water, the water is completely free from any contamination or pesticides. And when the animal drinks it, it clears all parasites, making the animal free from illness and very healthy. I rear catfish.”</p>
+              <div class="row d-flex justify-content-center mt-5">
+                <div class="col-md-8">
+                  <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" placeholder="Enter email address">
+                      <input type="submit" value="Subscribe" class="submit px-3">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% endblock %}

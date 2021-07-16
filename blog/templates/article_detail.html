@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}St Fancis - {{ post.title_tag }} {% endblock %}
+{% block content %}
+
+<div class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'school/images/bg_10.jpg' %}'); background-attachment:fixed;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-8 ftco-animate text-center">
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog</span></p>
+          <h1 class="mb-3 bread">Blog-Detail</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+<ul>
+<h1>{{ post.title }}</h1>
+<small>By: {{ post.author }}
+    {{ post.author.last_name }}
+</small><br>
+<hr>
+<br>
+{{ post.body }}
+
+<br><br>
+<a href="{% url 'blog' %}" class="btn btn-primary">Blogs</a>
+
+<br><br>
+<a href="{% url 'update_post' post.pk %}" class="btn btn-primary">Update</a>
+</ul>
+
+</div>
+
+
+{% endblock %}
